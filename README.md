@@ -11,7 +11,7 @@ Forked from the Official rabbitmq plugin for dokku with a modified config enabli
 
 ```shell
 # on 0.19.x+
-sudo dokku plugin:install https://github.com/dokku/dokku-rabbitmq.git rabbitmq
+sudo dokku plugin:install https://github.com/mavenea/dokku-rabbitmq.git rabbitmq
 ```
 
 ## Commands
