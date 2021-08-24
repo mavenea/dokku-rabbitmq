@@ -11,7 +11,7 @@ Forked from the Official rabbitmq plugin for dokku with a modified config enabli
 
 ```shell
 # on 0.19.x+
-sudo dokku plugin:install https://github.com/mavenea/dokku-rabbitmq.git rabbitmq
+sudo dokku plugin:install https://github.com/dokku/dokku-rabbitmq.git rabbitmq
 ```
 
 ## Commands
@@ -48,9 +48,13 @@ Help for any commands can be displayed by specifying the command as an argument 
 
 ```shell
 # usage
+# NOTE: Must use --image for your own image built using `docker build` command as below 
+# your custom image will include the enabled plugins.
+sudo docker build . -t rabbitmq-ownimage:mytag
+# use -i rabbitmq-ownimage -I mytag as flags
 dokku rabbitmq:create <service> [--create-flags...]
 ```
-
+  
 flags:
 
 - `-C|--custom-env "USER=alpha;HOST=beta"`: semi-colon delimited environment variables to start the service with
