@@ -1,8 +1,8 @@
 #
-# NOTE: THIS DOCKERFILE IS IDENTICAL TO `rabbitmq:3.8.0-management` rabbitmq/3.8/ubuntu/management/Dockerfile which is the base used by dokku
-#
-# THE IMAGE IS MODIFIED TO ADD ENABLE PLUGINS: RABBITMQ_STOMP AND RABBITMQ_WEB_STOMP.
-# FROM rabbitmq:3.8.0-management
+# NOTE: THIS DOCKERFILE IS IDENTICAL TO rabbitmq:3.8.0-management
+# 
+# THE IMAGE IS MODIFIED TO ADD ENABLE PLUGINS RABBITMQ_STOMP AND RABBITMQ_WEB_STOMP
+# 
 # 
 
 FROM rabbitmq:3.8
