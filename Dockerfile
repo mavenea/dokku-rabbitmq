@@ -1,9 +1,7 @@
-FROM rabbitmq:3.8.0-management
+FROM rabbitmq:3.9.5-management
 
 RUN set eux; \
-# enable rabbitmq_stomp plugin
-    rabbitmq-plugins enable rabbitmq_stomp; \
 # enable rabbitmq_web_stomp plugin
-	rabbitmq-plugins enable rabbitmq_web_stomp;
+        rabbitmq-plugins enable rabbitmq_web_stomp;
 
 EXPOSE 15673 15674
